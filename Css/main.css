@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    overflow: auto;
+    margin: 0;
+    height: 250%;
+}
+
+@keyframes textfade { from {opacity:0;} to {opacity:1;} }
+
+.title-text{
+  position: absolute;
+  font-size: 40px;
+  color:#B81EEE;
+  user-select:none;
+  animation-name: textfade;
+  animation-duration: 5s;
+  left:50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  z-index: 3;
+  position: fixed;
+  top:5px;
+  left:15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  z-index: 3;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
+
+.null{
+  position: absolute;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+@keyframes closeTopMenu { from {width:100%;} to {width:0%;} }
+
+@keyframes openTopMenu { from {width:0%;} to {width:100%;} }
+
+.open-top-menu{
+  z-index: 1;
+  overflow: hidden;
+  top:0;
+  position: fixed;
+  height: 50px;
+  background-color: #222;
+  animation-name: openTopMenu;
+  animation-duration: 3s;
+  width: 100%;
+  text-align:center;
+  display:flex;
+  flex: none;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+}
+
+.top-menu-inside{
+  color: #B61ADA;
+  user-select: none;
+  font-size: 24px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.top-menu-inside:hover{color:#921CAD}
+
+.close-top-menu{
+  z-index: 1;
+  top:0;
+  position: fixed;
+  overflow: hidden;
+  height: 50px;
+  background-color: #222;
+  animation-name: closeTopMenu;
+  animation-duration: 4s;
+  width: 0%;
+  text-align:center;
+  display:flex;
+  flexWrap:wrap;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row
+}
+
+.center-row{
+  text-align:center;
+  display:flex;
+  flexWrap:wrap;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row}

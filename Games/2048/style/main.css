@@ -1,14 +1,12 @@
 @import url(fonts/clear-sans.css);
 html, body {
-  margin: 0;
-  padding: 0;
+
   background:#000000;
   color: #ffffff;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
-body {
-  margin: 80px 0; }
+
 
 .heading:after {
   content: "";
@@ -119,8 +117,13 @@ hr {
   margin-top: 20px;
   margin-bottom: 30px; }
 
-.container {
+.containerZ {
   width: 500px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
@@ -163,10 +166,10 @@ hr {
   .game-container .game-message {
     display: none;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
     background: rgba(238, 228, 218, 0.5);
     z-index: 100;
     text-align: center;
@@ -596,10 +599,10 @@ hr {
     .game-container .game-message {
       display: none;
       position: absolute;
-      top: 0;
+      top: 50%;
       right: 0;
       bottom: 0;
-      left: 0;
+      left: 50%;
       background: rgba(238, 228, 218, 0.5);
       z-index: 100;
       text-align: center;
@@ -749,4 +752,3 @@ hr {
     -moz-transform: translate(202px, 202px);
     -ms-transform: translate(202px, 202px);
     transform: translate(202px, 202px); }
-

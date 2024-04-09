@@ -27,6 +27,7 @@ body {
   left:15px;
   display: inline-block;
   cursor: pointer;
+  margin-bottom:1em;
 }
 
 .bar1, .bar2, .bar3 {

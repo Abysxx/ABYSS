@@ -50,6 +50,7 @@ body {
   overflow: hidden;
   width: 0px;
   height: 0px;
+  margin-bottom:1em;
 }
 
 @keyframes closeTopMenu { from {width:100%;} to {width:0%;} }

@@ -8,7 +8,6 @@ body {
 @keyframes textfade { from {opacity:0;} to {opacity:1;} }
 
 .title-text{
-  font-family:Reaver;
   position: absolute;
   font-size: 40px;
   color:#B81EEE;

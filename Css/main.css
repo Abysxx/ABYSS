@@ -102,10 +102,6 @@ body {
   flex-direction:row;
 }
 
-.fix-menu-pos{
-  margin-bottom:1em;
-}
-
 .center-row{
   text-align:center;
   display:flex;

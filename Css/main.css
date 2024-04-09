@@ -147,7 +147,7 @@ body {
 
 @font-face {
 	font-family: Reaver;
-	src: url("/ABYSS/fonts/Reaver.otf") format("opentype");
+	src: url("ABYSS/fonts/Reaver.otf") format("opentype");
 }
 
 
